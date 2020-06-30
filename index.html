@@ -101,13 +101,15 @@
       }
       ul#menu li a .under_bar {
         height: 1px;
-        width: 0;
+        width: 1px;
+        visibility: hidden;
         background-color: black;
         float: right;
-        transition: .2s;
+        transition: width .2s;
       }
       ul#menu li a:hover .under_bar {
         width: 100%;
+        visibility: visible;
       }
 
       section#banners {
